@@ -79,10 +79,6 @@ header {
     padding: 0 24px;
 }
 
-.navbar .navbar-btn-1 {
-    padding-left: 0px;
-}
-
 .navbar .navbar-btn-2 {
     background-color: var(--highlight-color);
 }
