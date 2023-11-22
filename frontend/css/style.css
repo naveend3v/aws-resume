@@ -181,6 +181,7 @@ footer {
     max-width: 80%;
     margin: 0 auto;
     padding: 0;
+    padding-bottom: 2rem;
     box-sizing: border-box;
 }
 
