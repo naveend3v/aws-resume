@@ -12,7 +12,6 @@ jobs:
     steps:
     # S3 sync
     - name: S3 Sync
-      uses: actions/checkout@master
       uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl private --follow-symlinks --delete
