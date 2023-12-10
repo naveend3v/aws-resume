@@ -33,6 +33,7 @@ h2 {
 h3 {
     font-size: 18px;
 }
+
 /* navbar */
 
 header {
@@ -117,6 +118,16 @@ header {
     text-shadow: -4px -4px 0 salmon
 }
 
+/* Style for views count */
+.viewers-count {
+    text-align: center;
+}
+
+.viewers-count-tag {
+    color: #11ABB0;
+    font-weight: 600;
+}
+
 .wrapper {
     max-width: 80%;
     margin: 0 auto;
@@ -128,6 +139,7 @@ header {
     font-weight: 900;
     width: 100%;
     margin-top: 2.25rem;
+    text-align: center;
 }
 
 .section-container {
@@ -181,10 +193,6 @@ footer {
     box-sizing: border-box;
 }
 
-/* footer ul {
-    padding-left: 20%;
-} */
-
 footer ul li {
     list-style: none;
     display: block;
@@ -211,6 +219,7 @@ footer li:hover {
     text-decoration: underline var(--hover-color) 2px;
 }
 
+
 /* Tablet */
 @media (max-width:768px) {
 
@@ -218,7 +227,7 @@ footer li:hover {
         display: flex;
         flex-direction: column;
         border-bottom: 1px solid #ddd;
-        padding: 1rem 0rem;
+        padding: 0.5rem 0rem;
     }
 
     .section-profile-h1-sub-h1::before {
@@ -272,13 +281,13 @@ footer li:hover {
     }
 
     footer ul {
-        padding:auto auto;
+        padding: auto auto;
     }
 
     footer .footer-container ul {
         display: flex;
         flex-direction: column;
- 
+
         align-items: center;
     }
 
