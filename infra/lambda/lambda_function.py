@@ -23,24 +23,24 @@ def lambda_handler(event, context):
         responseBody = json.dumps({"count":int(dynamodbResponse['Attributes']['visitors'])})
 
     except:
-        createTable = dynamodb.create_table(
-            TableName = 'VisitorsTable',
-            KeySchema = [
-                    {
-                        'AttributeName': 'id',
-                        'KeyType': 'HASH'
-                    }
-                ],
-            AttributeDefinitions = [
-                {
-                    'AttributeName': 'id',
-                    'AttributeType': 'S'
-                }
-            ],
-            BillingMode = "PAY_PER_REQUEST"
-        )
+        # createTable = dynamodb.create_table(
+        #     TableName = 'VisitorsTable',
+        #     KeySchema = [
+        #             {
+        #                 'AttributeName': 'id',
+        #                 'KeyType': 'HASH'
+        #             }
+        #         ],
+        #     AttributeDefinitions = [
+        #         {
+        #             'AttributeName': 'id',
+        #             'AttributeType': 'S'
+        #         }
+        #     ],
+        #     BillingMode = "PAY_PER_REQUEST"
+        # )
 
-        table.wait_until_exists()
+        # table.wait_until_exists()
 
         putItem = table.put_item(
             Item = {
@@ -62,7 +62,7 @@ def lambda_handler(event, context):
         "statusCode": 200,
         'headers': {
             'Access-Control-Allow-Headers': 'Content-Type',
-            'Access-Control-Allow-Origin': 'https://resume.naveenraj.net',
+            'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
         },
         "body": responseBody
