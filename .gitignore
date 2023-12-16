@@ -1,2 +1,3 @@
 # Local .terraform directories
 infra/.terraform/*
+infra/.terraform.lock.hcl 
