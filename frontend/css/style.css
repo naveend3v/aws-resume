@@ -183,6 +183,11 @@ header {
     text-decoration: underline var(--hover-color) 2px;
 }
 
+.project-tag-1 {
+    color: black;
+    text-decoration: underline var(--highlight-color) 2px;
+}
+
 /* Footer */
 
 footer {
